@@ -1,0 +1,391 @@
+@font-face {
+    font-family: "parastoo-Regular";
+    src: url('../fonts/web/Farsi-Digits-Without-Latin/Parastoo-FD-WOL.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "parastoo-Bold";
+    src: url('../fonts/web/Farsi-Digits-Without-Latin/Parastoo-Bold-FD-WOL.ttf') format("truetype");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.main-bg {
+    background-color: #ffca36;
+}
+
+.main-text {
+    color: #ffca36;
+}
+
+.second-bg {
+    background-color: #16447d;
+}
+
+.second-text {
+    color: #16447d;
+}
+
+.third-bg {
+    background-color: #5b072c;
+}
+
+.third-text {
+    color: #5b072c;
+}
+
+.text-black {
+    color: black;
+}
+
+.bg-gray {
+    background-color: #eeeff0;
+}
+
+.bg-gray2 {
+    background-color: #eff0f1;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+a:hover {
+    color: #ffca36;
+}
+
+.fs-7 {
+    font-size: 12px;
+}
+
+.fs-8 {
+    font-size: 10px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.transition {
+    transition: all .4s;
+}
+
+.w-88 {
+    width: 88px;
+}
+
+.h-88 {
+    height: 88px;
+}
+
+.w-74 {
+    width: 74px;
+}
+
+.h-74 {
+    height: 74px;
+}
+
+.socials a:hover {
+    color: #ffca36 !important;
+}
+
+.special-hover {
+    overflow: hidden;
+}
+
+.special-hover::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 27px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.24);
+    transform: scale(2) rotate(45deg) translate3d(0, -100%, 0);
+    transition: transform .6s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.special-hover:hover::before {
+    transform: scale(2) rotate(45deg) translate3d(0, 100%, 0);
+    left: -51px;
+}
+
+.rounded-22 {
+    border-radius: 22px;
+}
+
+.bottom-24 {
+    bottom: -24px;
+}
+.bottom-268{
+    bottom: -268px;
+}
+.left-86 {
+    left: 86px;
+}
+.mt-276{
+    margin-top: 276px;
+}
+.swiper-button-prev::after,.swiper-button-next::after {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
+  .swiper-button-prev,.swiper-button-next{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    box-shadow: 0 3px 8px 0 #dbe0e8;
+    background-color: white;
+    top: 62px;
+  }
+
+/* header */
+img[alt='logo'] {
+    width: 170px;
+}
+
+header {
+    padding: 25px 0;
+    position: relative;
+    z-index: 99;
+    font-size: 14px;
+}
+
+header a {
+    color: white !important;
+}
+
+header a:hover,
+header a.active,
+.teamSocials a:hover {
+    color: #ffca36 !important;
+}
+
+header ul li:hover ul {
+    opacity: 100%;
+    visibility: visible;
+}
+
+header ul ul {
+    top: 54px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+}
+
+header ul ul a {
+    color: #333c56 !important;
+    width: 230px;
+}
+
+header ul ul a:hover {
+    transform: translateX(9px);
+}
+
+header ul ul::before {
+    background-color: #ffffff;
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: 27px;
+    top: 25px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+}
+
+/* banner */
+.vedio-banner {
+    position: relative;
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 100px 0;
+    width: 100%;
+    min-height: 500px;
+    height: 100vh;
+    margin-top: -89px;
+}
+
+.vedio-banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    max-height: 640px;
+    object-fit: cover;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.hero-banner.vedio-banner .container {
+    z-index: 5;
+}
+
+.vedio-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0c1221;
+    opacity: 0.6;
+    z-index: 3;
+}
+
+#searchBox .nav-tabs .nav-link {
+    color: white;
+}
+
+#searchBox .nav-tabs .nav-link.active,
+#searchBox .nav-tabs .nav-link:hover {
+    background-color: transparent;
+    color: #ffca36;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+
+#searchBox .tab-content>.tab-pane {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.category a:hover div {
+    border-color: #ffca36 !important;
+}
+
+.category a:hover div svg {
+    transform: scale(1.1);
+}
+
+/* featured listings */
+.featured-listings .nav-tabs {
+    border-bottom: none;
+    gap: 20px;
+}
+
+.featured-listings .nav-link {
+    color: black;
+    background: #eeeff0;
+    padding: 8px 47px;
+}
+
+.featured-listings .nav-tabs .nav-link.active {
+    border: 1px solid #ffca36;
+    background-color: #ffca3638;
+    color: #ffca36;
+}
+
+.car-item:hover>div:first-child div img:first-child {
+    display: none;
+}
+
+.car-item:hover>div:first-child div img:last-child {
+    display: block !important;
+}
+
+.car-item>div:last-child {
+    bottom: -80px;
+}
+
+.car-item:hover>div:last-child {
+    bottom: 0;
+}
+
+.label {
+    top: 11px;
+    left: -45px;
+    transform: rotate(-37deg);
+}
+
+/* team */
+.team-bg {
+    background-image: url('../img/background-team.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    position: relative;
+    top: -219px;
+}
+
+.team-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 22px;
+}
+
+.team .swiper-slide:hover {
+    transform: translateY(-9px);
+}
+
+/* brands */
+img[alt='brand']{
+    filter: grayscale(1);
+    transition: all .2s;
+    cursor: pointer;
+}
+img[alt='brand']:hover{
+    filter: grayscale(0);
+}
+
+/* footer */
+footer {
+    background-color: black;
+}
+
+footer img[alt='footer-logo'] {
+    width: 366px;
+}
+
+/* responsive */
+@media only screen and (max-width:1400px) {}
+
+@media only screen and (max-width:1200px) {}
+
+@media only screen and (max-width:992px) {}
+
+@media only screen and (max-width:768px) {}
+
+@media only screen and (max-width:576px) {}
+
+@media only screen and (max-width:400px) {}
