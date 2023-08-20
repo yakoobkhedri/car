@@ -103,7 +103,10 @@ a:hover {
     height: 74px;
 }
 .border-main{
-    border:1px solid #ffca36
+    border:1px solid #ffca36;
+}
+.border-black{
+    border:7px solid black;
 }
 .socials a:hover {
     color: #ffca36 !important;
