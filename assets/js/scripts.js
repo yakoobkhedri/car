@@ -42,6 +42,27 @@ var menuSwiper = new Swiper(".brands", {
     prevEl: ".swiper-button-prev",
 },
 });
+var menuSwiper = new Swiper(".testimonials", {
+  loop: true,
+  autoplay: true,
+  slidesPerView: 3,
+  spaceBetween:50,
+  breakpoints:{
+    1200:{
+      slidesPerView:2
+    },
+    768:{
+      slidesPerView:1
+    },
+    576:{
+      slidesPerView:1
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+},
+});
 // animation
 
 ScrollReveal().reveal('.top', {

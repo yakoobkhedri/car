@@ -102,7 +102,9 @@ a:hover {
 .h-74 {
     height: 74px;
 }
-
+.border-main{
+    border:1px solid #ffca36
+}
 .socials a:hover {
     color: #ffca36 !important;
 }
@@ -139,6 +141,9 @@ a:hover {
 }
 .bottom-268{
     bottom: -268px;
+}
+.top-70{
+    top: -70px;
 }
 .left-86 {
     left: 86px;
@@ -366,6 +371,13 @@ img[alt='brand']{
 }
 img[alt='brand']:hover{
     filter: grayscale(0);
+}
+/* testimonials */
+.testimonials-bg{
+    background-image: url('../img/stone-background-with-golden-strokes_764386-37.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* footer */
