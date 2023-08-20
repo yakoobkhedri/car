@@ -145,8 +145,8 @@ a:hover {
 .top-70{
     top: -70px;
 }
-.left-86 {
-    left: 86px;
+.right-86 {
+    right: 86px;
 }
 .mt-276{
     margin-top: 276px;
@@ -213,7 +213,7 @@ header ul ul::before {
     content: "";
     width: 18px;
     height: 18px;
-    left: 27px;
+    right: 27px;
     top: 25px;
     position: absolute;
     -webkit-transform: rotate(45deg);
@@ -378,6 +378,7 @@ img[alt='brand']:hover{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* footer */
@@ -385,8 +386,18 @@ footer {
     background-color: black;
 }
 
-footer img[alt='footer-logo'] {
-    width: 366px;
+footer ul li::before{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #ffca36;
+    border-radius: 100%;
+    right: -14px;
+    top: 14px;
+}
+footer ul li a:hover{
+    color: #ffca36!important;
 }
 
 /* responsive */
