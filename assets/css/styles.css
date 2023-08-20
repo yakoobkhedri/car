@@ -86,7 +86,13 @@ a:hover {
 .transition {
     transition: all .4s;
 }
+.w-57 {
+    width: 57px!important;
+}
 
+.h-36 {
+    height: 36px!important;
+}
 .w-88 {
     width: 88px;
 }
@@ -102,11 +108,17 @@ a:hover {
 .h-74 {
     height: 74px;
 }
+.w-800{
+    width: 800px;
+}
 .border-main{
     border:1px solid #ffca36;
 }
 .border-black{
     border:7px solid black;
+}
+.border-bottom-gray{
+    border-bottom: 9px solid #c8c6c6;
 }
 .socials a:hover {
     color: #ffca36 !important;
