@@ -257,7 +257,15 @@ header ul ul::before {
     -webkit-transition: all 0.2s ease 0s;
     -moz-transition: all 0.2s ease 0s;
 }
-
+.add-list:hover{
+    background-color: #ffca36!important;
+}
+.add-list svg{
+    color: #ffca36;
+}
+.add-list:hover svg{
+    color: white!important;
+}
 /* banner */
 .vedio-banner {
     position: relative;
@@ -323,17 +331,6 @@ header ul ul::before {
     position: absolute;
     left: 0;
     right: 0;
-}
-
-.all::before {
-    background-color: #ffffff;
-    content: "";
-    width: 18px;
-    height: 18px;
-    right: 27px;
-    top: 25px;
-    position: absolute;
-    transform: rotate(45deg);
 }
 
 .category a:hover div {
