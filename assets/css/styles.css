@@ -205,7 +205,7 @@ header ul ul a {
 }
 
 header ul ul a:hover {
-    transform: translateX(9px);
+    transform: translateX(-9px);
 }
 
 header ul ul::before {
