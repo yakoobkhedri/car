@@ -1,3 +1,15 @@
+// mobile menu
+
+let li=Array.from(document.querySelectorAll('header .menu > li'));
+
+li.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.querySelector('ul').classList.toggle('active');
+    item.querySelector('svg').classList.toggle('active');
+    item.querySelector('a').classList.toggle('mobileactive');
+  })
+})
+
 // fancybox
 
 Fancybox.bind("[data-fancybox]", {

@@ -210,6 +210,7 @@ header {
     z-index: 99;
     font-size: 14px;
 }
+
 header a {
     color: white !important;
 }
@@ -219,7 +220,9 @@ header a.active,
 .teamSocials a:hover {
     color: #ffca36 !important;
 }
-
+/* header .menu > li a.active {
+    color: white!important;
+ } */
 header ul li:hover ul {
     opacity: 100%;
     visibility: visible;
@@ -232,11 +235,20 @@ header ul ul {
     transition: all .4s;
 }
 
+header ul ul {
+    position: absolute;
+}
+header ul ul div {
+    background-color: white;
+}
 header ul ul a {
     color: #333c56 !important;
     width: 230px;
+    border-bottom: 1px solid #dee2e6;
 }
-
+header ul ul li:last-child a {
+    border-bottom: none;
+}
 header ul ul a:hover {
     transform: translateX(-9px);
 }
@@ -464,10 +476,47 @@ footer ul li a:hover {
         right: 0;
         width: 300px;
         line-height: 51px;
+        overflow-y: auto;
     }
-    header .menu > li {
-      border-bottom: 1px solid #313642;
-      padding: 0 12px;
+
+    header .menu>li {
+        border-bottom: 1px solid #313642;
+        padding: 0 12px;
+    }
+    header ul ul a{
+        border-bottom: 1px solid #313642!important;
+    }
+    header ul ul li:last-child a {
+        border-bottom: none!important;
+    }
+    header .menu > li a.mobileactive {
+       color: #ffca36!important;
+    }
+    header ul ul::before {
+        display: none;
+    }
+    header ul ul {
+        position: static !important;
+        opacity: 100%;
+        visibility: visible;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .4s;
+    }
+    header ul ul.active {
+        max-height: 1000px;
+    }
+    header .menu svg{
+        transition: all .4s;
+    }
+    header .menu svg.active{
+       transform: rotate(180deg);
+    }
+    header ul ul div {
+        background-color: transparent!important;
+    }
+    header ul ul a {
+       color: white!important;
     }
 }
 
