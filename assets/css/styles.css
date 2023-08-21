@@ -273,6 +273,7 @@ header ul ul::before {
 
 .add-list:hover {
     background-color: #ffca36 !important;
+    border-color: #ffca36 !important;
 }
 
 .add-list svg {
