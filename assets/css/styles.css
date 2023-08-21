@@ -91,12 +91,12 @@ a:hover {
     transition: all .4s;
 }
 
-.w-57 {
-    width: 57px !important;
+.w-120 {
+    width: 120px !important;
 }
 
-.h-36 {
-    height: 36px !important;
+.h-43 {
+    height: 43px !important;
 }
 
 .w-88 {
@@ -355,7 +355,9 @@ header ul ul::before {
     left: 0;
     right: 0;
 }
-
+.tab-content > .active {
+    z-index: 99;
+  }
 .category a:hover div {
     border-color: #ffca36 !important;
 }
@@ -557,9 +559,19 @@ footer ul li a:hover {
     img[alt="app"] {
         position: static !important;
     }
+    .w-800 {
+     width: auto;
+    }
+    .w-120 {
+        width: 100%!important;
+      }
 }
 
-@media only screen and (max-width:768px) {}
+@media only screen and (max-width:768px) {
+    .vedio-banner {
+      height: auto;
+    }
+}
 
 @media only screen and (max-width:576px) {
     input[value="ثبت نام"] {
@@ -567,4 +579,11 @@ footer ul li a:hover {
     }
 }
 
-@media only screen and (max-width:400px) {}
+@media only screen and (max-width:400px) {
+    #searchBox select{
+        font-size: 12px;
+    }
+    #searchBox .nav-tabs .nav-link.active, #searchBox .nav-tabs .nav-link{
+        font-size: 14px;
+    }
+}

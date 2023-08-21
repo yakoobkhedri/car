@@ -185,7 +185,7 @@
                 <div id="searchBox" class="mt-1">
                     <form class="container primary-bg rounded-2 py-4 px-5 top position-relative" data-sr-id="0"
                         style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s ease-out 0.5s, transform 2s ease-out 0.5s;">
-                        <ul class="nav nav-tabs gap-3 d-flex justify-content-center border-bottom-0" id="myTab"
+                        <ul class="nav p-0 nav-tabs gap-sm-3 font-bold flex-nowrap d-flex justify-content-center border-bottom-0" id="myTab"
                             role="tablist" style="top: -40px;z-index: 9!important;">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link fw-bold active" id="payment-tab" data-bs-toggle="tab"
@@ -206,35 +206,37 @@
                         <div class="tab-content mt-3 mb-5 pb-5" id="myTabContent">
                             <div class="d-flex align-items-center all bg-white overflow-hidden w-800 mx-auto border-bottom-gray px-3 py-4 rounded-22 flex-column flex-lg-row gap-3 tab-pane fade active show"
                                 id="payment-tab-pane" role="tabpanel" aria-labelledby="payment-tab" tabindex="0">
-                                <form class="d-flex align-items-center justify-content-between">
-                                    <select class="bg-transparent border rounded-3 flex-grow-1 p-2">
-                                        <option>تمام خودروها</option>
-                                        <option>Audi (14)</option>
-                                        <option>Bmv (19)</option>
-                                        <option>Ford (13)</option>
-                                        <option>Ferrari (33)</option>
-                                        <option>Toyota (43)</option>
-                                        <option>Benz (22)</option>
-                                    </select>
-                                    <select class="bg-transparent border rounded-3 flex-grow-1 p-2">
-                                        <option>تمام مدل ها</option>
-                                        <option>2023</option>
-                                        <option>2022</option>
-                                        <option>2021</option>
-                                        <option>2020</option>
-                                        <option>2019</option>
-                                        <option>2018</option>
-                                    </select>
-                                    <select class="bg-transparent border rounded-3 flex-grow-1 p-2">
-                                        <option>تمام قیمت ها</option>
-                                        <option>33,000 $</option>
-                                        <option>43,000 $</option>
-                                        <option>14,000 $</option>
-                                        <option>76,000 $</option>
-                                        <option>88,000 $</option>
-                                    </select>
+                                <form class="d-flex align-items-center flex-column flex-lg-row justify-content-between">
+                                    <div class="d-flex align-items-center justify-content-between gap-sm-4 gap-2 w-100">
+                                        <select class="bg-transparent w-100 border rounded-3 flex-grow-1 p-2">
+                                            <option>تمام خودروها</option>
+                                            <option>Audi (14)</option>
+                                            <option>Bmv (19)</option>
+                                            <option>Ford (13)</option>
+                                            <option>Ferrari (33)</option>
+                                            <option>Toyota (43)</option>
+                                            <option>Benz (22)</option>
+                                        </select>
+                                        <select class="bg-transparent w-100 border rounded-3 flex-grow-1 p-2">
+                                            <option>تمام مدل ها</option>
+                                            <option>2023</option>
+                                            <option>2022</option>
+                                            <option>2021</option>
+                                            <option>2020</option>
+                                            <option>2019</option>
+                                            <option>2018</option>
+                                        </select>
+                                        <select class="bg-transparent w-100 border rounded-3 flex-grow-1 p-2">
+                                            <option>تمام قیمت ها</option>
+                                            <option>33,000 $</option>
+                                            <option>43,000 $</option>
+                                            <option>14,000 $</option>
+                                            <option>76,000 $</option>
+                                            <option>88,000 $</option>
+                                        </select>
+                                    </div>
                                     <a
-                                        class="special-hover w-57 h-36 btn main-bg d-flex align-items-center justify-content-center text-white">
+                                        class="special-hover w-120 h-43 btn main-bg d-flex align-items-center justify-content-center text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                             <path
@@ -245,35 +247,37 @@
                             </div>
                             <div class="d-flex align-items-center new bg-white overflow-hidden w-800 mx-auto border-bottom-gray px-3 py-4 rounded-22 flex-column flex-lg-row gap-3 tab-pane fade"
                                 id="Installment-tab-pane" role="tabpanel" aria-labelledby="Installment-tab" tabindex="0">
-                                <form class="d-flex align-items-center w-100 gap-3 justify-content-between">
-                                    <select class="bg-transparent border rounded-3 flex-grow-1 p-2">
-                                        <option>تمام خودروها</option>
-                                        <option>Audi (14)</option>
-                                        <option>Bmv (19)</option>
-                                        <option>Ford (13)</option>
-                                        <option>Ferrari (33)</option>
-                                        <option>Toyota (43)</option>
-                                        <option>Benz (22)</option>
-                                    </select>
-                                    <select class="bg-transparent border rounded-3 flex-grow-1 p-2">
-                                        <option>تمام مدل ها</option>
-                                        <option>2023</option>
-                                        <option>2022</option>
-                                        <option>2021</option>
-                                        <option>2020</option>
-                                        <option>2019</option>
-                                        <option>2018</option>
-                                    </select>
-                                    <select class="bg-transparent border rounded-3 flex-grow-1 p-2">
-                                        <option>تمام قیمت ها</option>
-                                        <option>33,000 $</option>
-                                        <option>43,000 $</option>
-                                        <option>14,000 $</option>
-                                        <option>76,000 $</option>
-                                        <option>88,000 $</option>
-                                    </select>
+                                <form class="d-flex align-items-center flex-column flex-lg-row w-100 gap-3 justify-content-between">
+                                    <div class="d-flex align-items-center justify-content-between gap-sm-4 gap-2 w-100">
+                                        <select class="bg-transparent w-100 border rounded-3 flex-grow-1 p-2">
+                                            <option>تمام خودروها</option>
+                                            <option>Audi (14)</option>
+                                            <option>Bmv (19)</option>
+                                            <option>Ford (13)</option>
+                                            <option>Ferrari (33)</option>
+                                            <option>Toyota (43)</option>
+                                            <option>Benz (22)</option>
+                                        </select>
+                                        <select class="bg-transparent w-100 border rounded-3 flex-grow-1 p-2">
+                                            <option>تمام مدل ها</option>
+                                            <option>2023</option>
+                                            <option>2022</option>
+                                            <option>2021</option>
+                                            <option>2020</option>
+                                            <option>2019</option>
+                                            <option>2018</option>
+                                        </select>
+                                        <select class="bg-transparent w-100 border rounded-3 flex-grow-1 p-2">
+                                            <option>تمام قیمت ها</option>
+                                            <option>33,000 $</option>
+                                            <option>43,000 $</option>
+                                            <option>14,000 $</option>
+                                            <option>76,000 $</option>
+                                            <option>88,000 $</option>
+                                        </select>
+                                    </div>
                                     <a
-                                        class="special-hover w-57 h-36 btn main-bg d-flex align-items-center justify-content-center text-white">
+                                        class="special-hover w-120 h-43 btn main-bg d-flex align-items-center justify-content-center text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                             <path
@@ -282,10 +286,11 @@
                                     </a>
                                 </form>
                             </div>
-                            <div class="d-flex align-items-center used bg-white overflow-hidden w-800 mx-auto border-bottom-gray px-3 py-4 rounded-22 flex-column flex-lg-row gap-3 tab-pane fade"
-                                id="vehicle-tab-pane" role="tabpanel" aria-labelledby="vehicle-tab" tabindex="0">
-                                <form class="d-flex align-items-center w-100 gap-3 justify-content-between">
-                                    <select class="bg-transparent border rounded-3 flex-grow-1 p-2">
+                            <div class="d-flex align-items-center new bg-white overflow-hidden w-800 mx-auto border-bottom-gray px-3 py-4 rounded-22 flex-column flex-lg-row gap-3 tab-pane fade"
+                            id="vehicle-tab-pane" role="tabpanel" aria-labelledby="vehicle-tab" tabindex="0">
+                            <form class="d-flex align-items-center flex-column flex-lg-row w-100 gap-3 justify-content-between">
+                                <div class="d-flex align-items-center justify-content-between gap-sm-4 gap-2 w-100">
+                                    <select class="bg-transparent w-100 border rounded-3 flex-grow-1 p-2">
                                         <option>تمام خودروها</option>
                                         <option>Audi (14)</option>
                                         <option>Bmv (19)</option>
@@ -294,7 +299,7 @@
                                         <option>Toyota (43)</option>
                                         <option>Benz (22)</option>
                                     </select>
-                                    <select class="bg-transparent border rounded-3 flex-grow-1 p-2">
+                                    <select class="bg-transparent w-100 border rounded-3 flex-grow-1 p-2">
                                         <option>تمام مدل ها</option>
                                         <option>2023</option>
                                         <option>2022</option>
@@ -303,7 +308,7 @@
                                         <option>2019</option>
                                         <option>2018</option>
                                     </select>
-                                    <select class="bg-transparent border rounded-3 flex-grow-1 p-2">
+                                    <select class="bg-transparent w-100 border rounded-3 flex-grow-1 p-2">
                                         <option>تمام قیمت ها</option>
                                         <option>33,000 $</option>
                                         <option>43,000 $</option>
@@ -311,21 +316,22 @@
                                         <option>76,000 $</option>
                                         <option>88,000 $</option>
                                     </select>
-                                    <a
-                                        class="special-hover w-57 h-36 btn main-bg d-flex align-items-center justify-content-center text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                            <path
-                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                        </svg>
-                                    </a>
-                                </form>
-                            </div>
+                                </div>
+                                <a
+                                    class="special-hover w-120 h-43 btn main-bg d-flex align-items-center justify-content-center text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </a>
+                            </form>
+                        </div>
                         </div>
                     </form>
                 </div>
                 <!-- category -->
-                <div class="d-flex align-items-center justify-content-center gap-4 mt-5 text-center fw-bold category">
+                <div class="d-flex align-items-center flex-wrap justify-content-center gap-4 mt-5 pt-5 pt-lg-0 text-center fw-bold category">
                     <a class="d-block text-white">
                         <div
                             class="border-2 border border-white transition rounded-circle p-3 d-flex align-items-center justify-content-center h-88 w-88 mb-3">
