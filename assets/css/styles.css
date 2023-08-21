@@ -553,6 +553,12 @@ footer ul li a:hover {
     header ul ul a {
         color: white !important;
     }
+    .team-bg {
+       top: 0;
+    }
+    .mt-276{
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width:992px) {
