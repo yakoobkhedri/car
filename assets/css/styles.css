@@ -210,7 +210,9 @@ header {
     z-index: 99;
     font-size: 14px;
 }
-
+header #menuOverlay{
+    display: none;
+}
 header a {
     color: white !important;
 }
@@ -484,6 +486,7 @@ footer ul li a:hover {
         opacity: .7;
         max-height: 0;
         transition: all .4s;
+        display: block;
     }
     header #menuOverlay.active {
         max-height: 100%;
