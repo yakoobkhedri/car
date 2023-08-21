@@ -220,6 +220,7 @@ header a.active,
 .teamSocials a:hover {
     color: #ffca36 !important;
 }
+
 /* header .menu > li a.active {
     color: white!important;
  } */
@@ -238,17 +239,21 @@ header ul ul {
 header ul ul {
     position: absolute;
 }
+
 header ul ul div {
     background-color: white;
 }
+
 header ul ul a {
     color: #333c56 !important;
     width: 230px;
     border-bottom: 1px solid #dee2e6;
 }
+
 header ul ul li:last-child a {
     border-bottom: none;
 }
+
 header ul ul a:hover {
     transform: translateX(-9px);
 }
@@ -465,10 +470,22 @@ footer ul li a:hover {
 @media only screen and (max-width:1400px) {}
 
 @media only screen and (max-width:1200px) {
+
     .right-86 {
         right: 0;
     }
 
+    header #menuOverlay {
+        position: fixed;
+        inset: 0;
+        background-color: #000;
+        opacity: .7;
+        max-height: 0;
+        transition: all .4s;
+    }
+    header #menuOverlay.active {
+        max-height: 100%;
+    }
     header .menu {
         position: fixed;
         background: black;
@@ -478,8 +495,9 @@ footer ul li a:hover {
         width: 300px;
         line-height: 51px;
         overflow-y: auto;
-        transition:  all .4s;
+        transition: all .4s;
     }
+
     header .menu.active {
         right: 0;
     }
@@ -488,18 +506,23 @@ footer ul li a:hover {
         border-bottom: 1px solid #313642;
         padding: 0 12px;
     }
-    header ul ul a{
-        border-bottom: 1px solid #313642!important;
+
+    header ul ul a {
+        border-bottom: 1px solid #313642 !important;
     }
+
     header ul ul li:last-child a {
-        border-bottom: none!important;
+        border-bottom: none !important;
     }
-    header .menu > li a.mobileactive {
-       color: #ffca36!important;
+
+    header .menu>li a.mobileactive {
+        color: #ffca36 !important;
     }
+
     header ul ul::before {
         display: none;
     }
+
     header ul ul {
         position: static !important;
         opacity: 100%;
@@ -508,20 +531,25 @@ footer ul li a:hover {
         overflow: hidden;
         transition: all .4s;
     }
+
     header ul ul.active {
         max-height: 1000px;
     }
-    header .menu svg{
+
+    header .menu svg {
         transition: all .4s;
     }
-    header .menu svg.active{
-       transform: rotate(180deg);
+
+    header .menu svg.active {
+        transform: rotate(180deg);
     }
+
     header ul ul div {
-        background-color: transparent!important;
+        background-color: transparent !important;
     }
+
     header ul ul a {
-       color: white!important;
+        color: white !important;
     }
 }
 

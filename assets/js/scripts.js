@@ -5,9 +5,11 @@ let li=Array.from(document.querySelectorAll('header .menu > li'));
 
 document.getElementById('hamicon').addEventListener('click',function () {
   menu.classList.add('active');
+  document.getElementById('menuOverlay').classList.add('active');
 })
 document.getElementById('closeMenu').addEventListener('click',function () {
   menu.classList.remove('active');
+  document.getElementById('menuOverlay').classList.remove('active');
 })
 
 li.forEach((item)=>{
