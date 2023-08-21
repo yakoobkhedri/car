@@ -12,9 +12,11 @@ body {
     font-family: "parastoo-Regular";
     user-select: none;
 }
+
 .font-bold {
     font-family: "parastoo-Bold";
 }
+
 .bg-black {
     background-color: black;
 }
@@ -208,7 +210,6 @@ header {
     z-index: 99;
     font-size: 14px;
 }
-
 header a {
     color: white !important;
 }
@@ -257,15 +258,19 @@ header ul ul::before {
     -webkit-transition: all 0.2s ease 0s;
     -moz-transition: all 0.2s ease 0s;
 }
-.add-list:hover{
-    background-color: #ffca36!important;
+
+.add-list:hover {
+    background-color: #ffca36 !important;
 }
-.add-list svg{
+
+.add-list svg {
     color: #ffca36;
 }
-.add-list:hover svg{
-    color: white!important;
+
+.add-list:hover svg {
+    color: white !important;
 }
+
 /* banner */
 .vedio-banner {
     position: relative;
@@ -449,19 +454,33 @@ footer ul li a:hover {
 @media only screen and (max-width:1200px) {
     .right-86 {
         right: 0;
-      }
+    }
+
+    header .menu {
+        position: fixed;
+        background: black;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        line-height: 51px;
+    }
+    header .menu > li {
+      border-bottom: 1px solid #313642;
+      padding: 0 12px;
+    }
 }
 
 @media only screen and (max-width:992px) {
-    img[alt="app"]{
-        position: static!important;
+    img[alt="app"] {
+        position: static !important;
     }
 }
 
 @media only screen and (max-width:768px) {}
 
 @media only screen and (max-width:576px) {
-    input[value="ثبت نام"]{
+    input[value="ثبت نام"] {
         width: 100%;
     }
 }
