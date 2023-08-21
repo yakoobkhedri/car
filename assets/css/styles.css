@@ -199,6 +199,43 @@ a:hover {
     top: 62px;
 }
 
+.accordion-item {
+    margin-bottom: 12px;
+}
+
+.accordion-button::after {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.accordion-item,
+.accordion-item:first-of-type,
+.accordion-item:last-of-type {
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-item:first-of-type .accordion-button {
+    color: black;
+    border: 1px solid #5b072c;
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: white;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: contrast(0);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
 /* header */
 img[alt='logo'] {
     width: 170px;
@@ -210,9 +247,11 @@ header {
     z-index: 99;
     font-size: 14px;
 }
-header #menuOverlay{
+
+header #menuOverlay {
     display: none;
 }
+
 header a {
     color: white !important;
 }
@@ -357,9 +396,11 @@ header ul ul::before {
     left: 0;
     right: 0;
 }
-.tab-content > .active {
+
+.tab-content>.active {
     z-index: 99;
-  }
+}
+
 .category a:hover div {
     border-color: #ffca36 !important;
 }
@@ -488,9 +529,11 @@ footer ul li a:hover {
         transition: all .4s;
         display: block;
     }
+
     header #menuOverlay.active {
         max-height: 100%;
     }
+
     header .menu {
         position: fixed;
         background: black;
@@ -556,10 +599,12 @@ footer ul li a:hover {
     header ul ul a {
         color: white !important;
     }
+
     .team-bg {
-       top: 0;
+        top: 0;
     }
-    .mt-276{
+
+    .mt-276 {
         margin-top: 0;
     }
 }
@@ -568,17 +613,19 @@ footer ul li a:hover {
     img[alt="app"] {
         position: static !important;
     }
+
     .w-800 {
-     width: auto;
+        width: auto;
     }
+
     .w-120 {
-        width: 100%!important;
-      }
+        width: 100% !important;
+    }
 }
 
 @media only screen and (max-width:768px) {
     .vedio-banner {
-      height: auto;
+        height: auto;
     }
 }
 
@@ -589,10 +636,12 @@ footer ul li a:hover {
 }
 
 @media only screen and (max-width:400px) {
-    #searchBox select{
+    #searchBox select {
         font-size: 12px;
     }
-    #searchBox .nav-tabs .nav-link.active, #searchBox .nav-tabs .nav-link{
+
+    #searchBox .nav-tabs .nav-link.active,
+    #searchBox .nav-tabs .nav-link {
         font-size: 14px;
     }
 }
