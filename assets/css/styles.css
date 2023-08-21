@@ -474,10 +474,14 @@ footer ul li a:hover {
         background: black;
         top: 0;
         bottom: 0;
-        right: 0;
+        right: -400px;
         width: 300px;
         line-height: 51px;
         overflow-y: auto;
+        transition:  all .4s;
+    }
+    header .menu.active {
+        right: 0;
     }
 
     header .menu>li {
