@@ -241,6 +241,13 @@ a:hover {
   .breadcrumb-item.active {
     color: #ffca36;
   }
+  .pagination a{
+    color: black;
+  }
+  .pagination a.active,.pagination a:hover{
+    background-color: black;
+    color: #ffca36;
+  }
 /* header */
 img[alt='logo'] {
     width: 170px;
