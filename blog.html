@@ -212,6 +212,16 @@
                 <div class="row mx-0 g-4">
                     <!-- content -->
                     <div class="col-xl-8">
+                        <!-- search -->
+                        <form class="rounded-3 p-4 bg-black mb-5 d-xl-none">
+                            <div class="d-flex align-items-center rounded-3 border gap-3 justify-content-between px-3">
+                              <input placeholder="جستجو" class="form-control bg-transparent border-0 focus-none text-white">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search cursor text-white" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
+                            </div>
+                        </form>
+                        <!-- row -->
                         <div class="row g-4">
                             <div class="col-lg-6">
                                 <div class="rounded-3 border overflow-hidden blog-card text-center text-lg-end">
@@ -546,7 +556,7 @@
                     <div class="col-xl-4">
                         <div>
                             <!-- search -->
-                            <form class="rounded-3 p-4 bg-black">
+                            <form class="rounded-3 p-4 bg-black d-none d-xl-block">
                                 <div class="d-flex align-items-center rounded-3 border gap-3 justify-content-between px-3">
                                   <input placeholder="جستجو" class="form-control bg-transparent border-0 focus-none text-white">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search cursor text-white" viewBox="0 0 16 16">
@@ -555,27 +565,30 @@
                                 </div>
                             </form>
                             <!-- category -->
-                            <h4 class="font-bold mb-3 mt-5">دسته بندی ها</h4>
-                            <div class="rounded-3 p-4 bg-black">
-                              <a class="d-flex align-items-center justify-content-between border-bottom py-3 text-gray">
-                                 <p class="mb-0 h5">Auto Detailing</p>
-                                 <p class="font-bold main-text mb-0">(43)</p>
-                              </a>
-                              <a class="d-flex align-items-center justify-content-between border-bottom py-3 text-gray">
-                                 <p class="mb-0 h5">Car News</p>
-                                 <p class="font-bold main-text mb-0">(15)</p>
-                              </a>
-                              <a class="d-flex align-items-center justify-content-between border-bottom py-3 text-gray">
-                                 <p class="mb-0 h5">Car Reviews</p>
-                                 <p class="font-bold main-text mb-0">(32)</p>
-                              </a>
-                              <a class="d-flex align-items-center justify-content-between py-3 text-gray">
-                                 <p class="mb-0 h5">Classic Cars</p>
-                                 <p class="font-bold main-text mb-0">(12)</p>
-                              </a>
+                            <div>
+                                <h4 class="font-bold mb-3 mt-5">دسته بندی ها</h4>
+                                <div class="rounded-3 p-4 bg-black">
+                                  <a class="d-flex align-items-center justify-content-between border-bottom py-3 text-gray">
+                                     <p class="mb-0 h5">Auto Detailing</p>
+                                     <p class="font-bold main-text mb-0">(43)</p>
+                                  </a>
+                                  <a class="d-flex align-items-center justify-content-between border-bottom py-3 text-gray">
+                                     <p class="mb-0 h5">Car News</p>
+                                     <p class="font-bold main-text mb-0">(15)</p>
+                                  </a>
+                                  <a class="d-flex align-items-center justify-content-between border-bottom py-3 text-gray">
+                                     <p class="mb-0 h5">Car Reviews</p>
+                                     <p class="font-bold main-text mb-0">(32)</p>
+                                  </a>
+                                  <a class="d-flex align-items-center justify-content-between py-3 text-gray">
+                                     <p class="mb-0 h5">Classic Cars</p>
+                                     <p class="font-bold main-text mb-0">(12)</p>
+                                  </a>
+                                </div>
                             </div>
                             <!-- posts -->
-                            <h4 class="font-bold mb-3 mt-5">پست های اخیر</h4>
+                            <div>
+                                <h4 class="font-bold mb-3 mt-5">پست های اخیر</h4>
                             <div>
                                 <div class="d-flex align-items-center gap-3 py-3 border-bottom">
                                   <img alt="post" src="assets/img/bn-768x404.jpg" class="w-99 h-99 rounded-3">
@@ -604,6 +617,39 @@
                                     <a class="font-bold h5 text-black">Most Popular All-Wheel-Drive SUVs </a>
                                     <a class="text-decoration-underline mt-3 main-text d-block font-bold">بیشتر بخوانید</a>
                                   </div>
+                                </div>
+                                <a class="text-decoration-underline mt-3 main-text d-block font-bold">مشاهده تمام پست ها</a>
+                            </div>
+                            </div>
+                            <!-- about -->
+                            <div class="bg-black rounded-3 p-4 mt-5">
+                                <h4 class="font-bold mb-3 border-bottom border-secondary pb-3 text-white">درباره ما</h4>
+                                <div class="d-flex align-items-center gap-3">
+                                  <img alt="about" src="assets/img/p7-1-336x284.jpg" class="img-fluid w-54 h-54 rounded-circle">
+                                  <div class="font-bold">
+                                    <h5 class="text-white">مریم رضوی</h5>
+                                    <p class="main-text mb-0">بلاگر</p>
+                                  </div>
+                                </div>
+                                <p class="text-white-50 mt-3 mb-0">
+                                    We went down the lane, by the body of the man in black, sodden now from the overnight hail, and broke into the woods..
+                                </p>
+                            </div>
+                            <!-- tags -->
+                            <div>
+                                <h4 class="font-bold mb-3 mt-5">برچسب های محبوب</h4>
+                                <div class="bg-black p-4 rounded-3 mt-5">
+                                   <div class="d-flex align-items-center gap-2 flex-wrap">
+                                      <a class="py-2 px-4 rounded-3 tag main-text border-main">sedan</a>
+                                      <a class="py-2 px-4 rounded-3 tag main-text border-main">hatchback</a>
+                                      <a class="py-2 px-4 rounded-3 tag main-text border-main">luxury</a>
+                                      <a class="py-2 px-4 rounded-3 tag main-text border-main">minivan</a>
+                                      <a class="py-2 px-4 rounded-3 tag main-text border-main">premium</a>
+                                      <a class="py-2 px-4 rounded-3 tag main-text border-main">speed</a>
+                                      <a class="py-2 px-4 rounded-3 tag main-text border-main">sport</a>
+                                      <a class="py-2 px-4 rounded-3 tag main-text border-main">supercars</a>
+                                      <a class="py-2 px-4 rounded-3 tag main-text border-main">suv</a>
+                                   </div>
                                 </div>
                             </div>
                         </div>

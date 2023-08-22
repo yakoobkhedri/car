@@ -108,6 +108,13 @@ a:hover {
 .h-24 {
     height: 24px;
 }
+.w-54 {
+    width: 54px;
+}
+
+.h-54 {
+    height: 54px;
+}
 .w-99{
     width: 99px;
 }
@@ -266,7 +273,10 @@ a:hover {
 .focus-none:focus {
     box-shadow: none;
 }
-
+.tag:hover{
+    background-color: #ffd870;
+    color: black;
+}
 /* header */
 img[alt='logo'] {
     width: 170px;
