@@ -98,13 +98,15 @@ a:hover {
 .h-43 {
     height: 43px !important;
 }
+
 .w-24 {
     width: 24px;
 }
 
 .h-24 {
-   height: 24px;
+    height: 24px;
 }
+
 .w-88 {
     width: 88px;
 }
@@ -232,22 +234,32 @@ a:hover {
 .accordion-button:focus {
     box-shadow: none;
 }
-.breadcrumb-item + .breadcrumb-item::before {
+
+.breadcrumb-item+.breadcrumb-item::before {
     float: right;
     padding-left: .5rem;
     transform: rotate(180deg);
     padding-right: 0.5rem;
-  }
-  .breadcrumb-item.active {
+}
+
+.breadcrumb-item.active {
     color: #ffca36;
-  }
-  .pagination a{
+}
+
+.pagination a {
     color: black;
-  }
-  .pagination a.active,.pagination a:hover{
+}
+
+.pagination a.active,
+.pagination a:hover {
     background-color: black;
     color: #ffca36;
-  }
+}
+
+.focus-none:focus {
+    box-shadow: none;
+}
+
 /* header */
 img[alt='logo'] {
     width: 170px;
@@ -273,6 +285,7 @@ header a.active,
 .teamSocials a:hover {
     color: #ffca36 !important;
 }
+
 header ul li:hover ul {
     opacity: 100%;
     visibility: visible;
@@ -374,7 +387,8 @@ header ul ul::before {
     z-index: 5;
 }
 
-.vedio-banner .overlay,.blog-banner::after {
+.vedio-banner .overlay,
+.blog-banner::after {
     content: '';
     position: absolute;
     top: 0;
@@ -501,7 +515,7 @@ img[alt='brand']:hover {
 }
 
 /* faq page */
-.faq-bg{
+.faq-bg {
     background-image: url('../img/lovepik-atmospheric-black-gold-background-image_401612552.jpg');
     background-size: cover;
     background-position: center;
@@ -509,25 +523,28 @@ img[alt='brand']:hover {
 }
 
 /* blog page */
-.blog-banner{
+.blog-banner {
     background-image: url('../img/photo-hoteam-196xdwXDHc0-unsplash.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 60vh;
 }
-.blog-card:hover > div:first-child img{
+
+.blog-card:hover>div:first-child img {
     opacity: .9;
-transform: scale3d(1.1,1.1,1);
+    transform: scale3d(1.1, 1.1, 1);
 }
-.blog-card a.h4:hover{
-   color: #ffca36!important;
+
+.blog-card a.h4:hover {
+    color: #ffca36 !important;
 }
-.blog-card > div:first-child{
+
+.blog-card>div:first-child {
     height: 300px;
 }
 
-.blog-card > div:first-child img{
+.blog-card>div:first-child img {
     object-fit: cover;
     transition: all .4s;
 }
