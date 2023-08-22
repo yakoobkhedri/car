@@ -509,6 +509,13 @@ img[alt='brand']:hover {
     background-repeat: no-repeat;
     height: 60vh;
 }
+.blog-card > div:first-child{
+    height: 300px;
+}
+
+.blog-card > div:first-child img{
+    object-fit: cover;
+}
 
 /* footer */
 footer {
