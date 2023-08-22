@@ -226,7 +226,15 @@ a:hover {
 .accordion-button:focus {
     box-shadow: none;
 }
-
+.breadcrumb-item + .breadcrumb-item::before {
+    float: right;
+    padding-left: .5rem;
+    transform: rotate(180deg);
+    padding-right: 0.5rem;
+  }
+  .breadcrumb-item.active {
+    color: #ffca36;
+  }
 /* header */
 img[alt='logo'] {
     width: 170px;
@@ -252,10 +260,6 @@ header a.active,
 .teamSocials a:hover {
     color: #ffca36 !important;
 }
-
-/* header .menu > li a.active {
-    color: white!important;
- } */
 header ul li:hover ul {
     opacity: 100%;
     visibility: visible;
