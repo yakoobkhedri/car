@@ -208,18 +208,9 @@ a:hover {
     margin-left: 0;
 }
 
-.accordion-item,
-.accordion-item:first-of-type,
-.accordion-item:last-of-type {
-    border-radius: 15px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
 .accordion-button:not(.collapsed),
 .accordion-item:first-of-type .accordion-button {
     color: black;
-    border: 1px solid #5b072c;
     border-radius: 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -366,7 +357,8 @@ header ul ul::before {
     z-index: 5;
 }
 
-.vedio-banner .overlay {
+.vedio-banner .overlay,.blog-banner::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -489,6 +481,23 @@ img[alt='brand']:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+/* faq page */
+.faq-bg{
+    background-image: url('../img/lovepik-atmospheric-black-gold-background-image_401612552.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* blog page */
+.blog-banner{
+    background-image: url('../img/photo-hoteam-196xdwXDHc0-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
 }
 
 /* footer */
