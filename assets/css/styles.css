@@ -48,7 +48,9 @@ body {
 .text-black {
     color: black;
 }
-
+.text-gray{
+    color: lightgray;
+}
 .bg-gray {
     background-color: #eeeff0;
 }
