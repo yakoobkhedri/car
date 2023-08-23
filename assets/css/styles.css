@@ -570,6 +570,14 @@ img[alt='brand']:hover {
     object-fit: cover;
     transition: all .4s;
 }
+/* about page */
+.bg-statistic{
+    background-image: url('../img/Black-Car-Dream-Meaning.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /* footer */
 footer {
