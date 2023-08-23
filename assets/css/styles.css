@@ -578,6 +578,17 @@ img[alt='brand']:hover {
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* login page */
+.bg-login{
+    background-image: url('../img/login.jpg');
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login-form input::placeholder{
+    color: #ffca36;
+}
 
 /* footer */
 footer {
