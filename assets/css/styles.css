@@ -92,7 +92,9 @@ a:hover {
 .transition {
     transition: all .4s;
 }
-
+.w-220 {
+    width: 220px !important;
+}
 .w-120 {
     width: 120px !important;
 }
@@ -197,11 +199,12 @@ a:hover {
 .top-70 {
     top: -70px;
 }
-
 .right-86 {
     right: 86px;
 }
-
+.rotate-y-180{
+    transform: rotateY(180deg);
+}
 .mt-276 {
     margin-top: 276px;
 }
