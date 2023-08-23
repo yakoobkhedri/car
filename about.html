@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="assets/css/swiper.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <title>درباره ما</title>
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header class="bg-black">
+
+        <nav class="container d-flex justify-content-between align-items-center fw-bold">
+
+            <!-- menu overlay -->
+            <div id="menuOverlay"></div>
+
+            <!-- ham icon -->
+            <svg id="hamicon" xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+                class="bi bi-list-nested flex-shrink-0 main-text d-xl-none cursor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <!-- logo && menu -->
+            <div class="d-flex align-items-center gap-4">
+                <a class="d-flex align-items-center gap-2">
+                    <img alt="logo" src="assets/img/logo.png" class="img-fluid">
+                </a>
+                <ul class="m-0 list-unstyled menu p-0 d-xl-flex align-items-center gap-5">
+                    <div class="d-flex d-xl-none align-items-center justify-content-between px-2 my-3">
+                        <a class="d-flex align-items-center add-list main-bg transition gap-2 px-4 btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-circle-fill text-white transition" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z">
+                                </path>
+                            </svg>
+                            <span class="text-white transition">افزودن لیست</span>
+                        </a>
+                        <svg id="closeMenu" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-x-lg main-text cursor" viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                        </svg>
+                    </div>
+                    <li><a>Home</a></li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-between justify-content-xl-start gap-2">
+                            <span>Search</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </a>
+                        <ul class="m-0 p-0 list-unstyled">
+                            <li class="bg-transparent d-none d-xl-block"><a class="border-bottom-0 d-block py-3"></a>
+                            </li>
+                            <div class="shadow p-3 py-0 py-xl-3 rounded-3">
+                                <li class=""><a class="d-block py-0 py-xl-3">لیست املاک</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-3">مشاوران</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-3">نمایندگان</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-between justify-content-xl-start gap-2">
+                            <span>Listing</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </a>
+                        <ul class="m-0 p-0 list-unstyled">
+                            <li class="bg-transparent d-none d-xl-block"><a class="border-bottom-0 d-block py-3"></a>
+                            </li>
+                            <div class="shadow p-3 py-0 py-xl-3 rounded-3">
+                                <li class=""><a class="d-block py-0 py-xl-3">لیست املاک</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-3">مشاوران</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-3">نمایندگان</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a
+                            class="d-flex active align-items-center justify-content-between justify-content-xl-start gap-2">
+                            <span>Pages</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </a>
+                        <ul class="m-0 p-0 list-unstyled">
+                            <li class="bg-transparent d-none d-xl-block"><a class="border-bottom-0 d-block py-3"></a>
+                            </li>
+                            <div class="shadow p-3 py-0 py-xl-3 rounded-3">
+                                <li class=""><a class="d-block py-0 py-xl-3">تماس با ما</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-3">مشاوران</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-3">نمایندگان</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-between justify-content-xl-start gap-2">
+                            <span>More</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </a>
+                        <ul class="m-0 p-0 list-unstyled">
+                            <li class="bg-transparent d-none d-xl-block"><a class="border-bottom-0 d-block py-3"></a>
+                            </li>
+                            <div class="shadow p-3 py-0 py-xl-3 rounded-3">
+                                <li class=""><a class="d-block py-0 py-xl-3">لیست املاک</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-3">مشاوران</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-3">نمایندگان</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <a class="d-flex d-xl-none align-items-center gap-3 text-white-50 px-3 py-2 mt-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-telephone-fill main-text" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        <p class="mb-0 h5 font-bold"> (123) 456-78901</p>
+                    </a>
+                    <a class="d-flex d-xl-none align-items-center gap-3 text-white-50 px-3 py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-envelope main-text" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                        <p class="mb-0 h5 font-bold"> support@vehica.com</p>
+                    </a>
+                </ul>
+            </div>
+            <!-- mobile login -->
+            <a class="d-block d-xl-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-people-fill text-white" viewBox="0 0 16 16">
+                    <path
+                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                </svg>
+            </a>
+            <!-- desktop login -->
+            <div class="d-xl-flex d-none gap-3 align-items-center">
+                <a class="d-flex align-items-center gap-2 border-start ps-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-person main-text" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                    <span>ورود</span>
+                </a>
+                <a class="d-block">
+                    <span>ثبت نام</span>
+                </a>
+                <a class="d-flex align-items-center main-text add-list transition gap-2 px-4 btn border-2 border-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-plus-circle-fill transition" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                    </svg>
+                    <span class="text-white transition">افزودن لیست</span>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- main -->
+
+    <main>
+
+        <!-- about section -->
+        <section class="pb-5">
+            <!-- breadcrumb -->
+            <div class="bg-black py-3">
+                <div class="container">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a class="text-secondary font-bold" href="index.html">صفحه
+                                    اصلی</a></li>
+                            <li class="breadcrumb-item main-text font-bold active" aria-current="page">درباره ما</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="mt-5">
+                <!-- team -->
+                <div class="bg-gray mt-276 py-5 py-xl-0">
+                    <div class="container">
+                        <div class="row align-items-center g-4 py-5 rounded-22 team-bg">
+                            <div class="col-lg-3 pe-5 position-relative text-center text-lg-end">
+                                <h1 class="font-bold text-white">تیم ما</h1>
+                                <ul class="list-unstyled lh-lg my-5 fs-14 text-white-50 pe-0">
+                                    <li
+                                        class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 fw-bold mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check-circle-fill main-text"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                            </path>
+                                        </svg>
+                                        <p class="mb-0">Praesent nibh luctus viverra</p>
+                                    </li>
+                                    <li
+                                        class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 fw-bold mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check-circle-fill main-text"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                            </path>
+                                        </svg>
+                                        <p class="mb-0">Adipiscing elit</p>
+                                    </li>
+                                    <li
+                                        class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 fw-bold mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check-circle-fill main-text"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                            </path>
+                                        </svg>
+                                        <p class="mb-0">Tempor incididunt ut labore</p>
+                                    </li>
+                                    <li
+                                        class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 fw-bold mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check-circle-fill main-text"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                            </path>
+                                        </svg>
+                                        <p class="mb-0">Quis ipsum suspendisseviverra</p>
+                                    </li>
+                                    <li
+                                        class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 fw-bold mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check-circle-fill main-text"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                                            </path>
+                                        </svg>
+                                        <p class="mb-0">Maecenas ac</p>
+                                    </li>
+                                </ul>
+                                <a class="btn position-relative special-hover main-bg text-white fw-bold">
+                                    بیشتر بدانید
+                                </a>
+                            </div>
+                            <div class="col-lg-9 position-relative">
+                                <!-- swiper -->
+                                <div class="swiper team right-86 py-4">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide transition bg-white rounded-3 overflow-hidden">
+                                            <a class="d-block">
+                                                <div class="position-relative">
+                                                    <img alt="team" src="assets/img/p7-1-336x284.jpg"
+                                                        class="img-fluid w-100">
+                                                    <div
+                                                        class="d-flex align-items-center gap-2 position-absolute bottom-24 ms-4 mt-4">
+                                                        <a
+                                                            class="d-flex align-items-center justify-content-center text-white p-3 rounded-3 third-bg">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" fill="currentColor"
+                                                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                            </svg>
+                                                        </a>
+                                                        <a
+                                                            class="d-flex align-items-center justify-content-center text-white p-3 rounded-3 third-bg">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" fill="currentColor"
+                                                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="px-4 py-5 bg-white">
+                                                    <a class="mb-1 h5 fw-bold text-black">Emily Rees</a>
+                                                    <p class="text-secondary">مشاور مشتری</p>
+                                                    <hr class="third-bg">
+                                                    <a class="fw-bold main-text">emily@vehica.com </a>
+                                                    <a class="fw-bold text-secondary d-table">(123) 345-6789 </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide transition bg-white rounded-3 overflow-hidden">
+                                            <a class="d-block">
+                                                <div class="position-relative">
+                                                    <img alt="team" src="assets/img/p6-1-336x284.jpg"
+                                                        class="img-fluid w-100">
+                                                    <div
+                                                        class="d-flex align-items-center gap-2 position-absolute bottom-24 ms-4 mt-4">
+                                                        <a
+                                                            class="d-flex align-items-center justify-content-center text-white p-3 rounded-3 third-bg">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" fill="currentColor"
+                                                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                            </svg>
+                                                        </a>
+                                                        <a
+                                                            class="d-flex align-items-center justify-content-center text-white p-3 rounded-3 third-bg">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" fill="currentColor"
+                                                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="px-4 py-5 bg-white">
+                                                    <a class="mb-1 h5 fw-bold text-black">Emily Rees</a>
+                                                    <p class="text-secondary">مشاور مشتری</p>
+                                                    <hr class="third-bg">
+                                                    <a class="fw-bold main-text">emily@vehica.com </a>
+                                                    <a class="fw-bold text-secondary d-table">(123) 345-6789 </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide transition bg-white rounded-3 overflow-hidden">
+                                            <a class="d-block">
+                                                <div class="position-relative">
+                                                    <img alt="team" src="assets/img/p4-1-336x284.jpg"
+                                                        class="img-fluid w-100">
+                                                    <div
+                                                        class="d-flex align-items-center gap-2 position-absolute bottom-24 ms-4 mt-4">
+                                                        <a
+                                                            class="d-flex align-items-center justify-content-center text-white p-3 rounded-3 third-bg">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" fill="currentColor"
+                                                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                            </svg>
+                                                        </a>
+                                                        <a
+                                                            class="d-flex align-items-center justify-content-center text-white p-3 rounded-3 third-bg">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" fill="currentColor"
+                                                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="px-4 py-5 bg-white">
+                                                    <a class="mb-1 h5 fw-bold text-black">Emily Rees</a>
+                                                    <p class="text-secondary">مشاور مشتری</p>
+                                                    <hr class="third-bg">
+                                                    <a class="fw-bold main-text">emily@vehica.com </a>
+                                                    <a class="fw-bold text-secondary d-table">(123) 345-6789 </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide transition bg-white rounded-3 overflow-hidden">
+                                            <a class="d-block">
+                                                <div class="position-relative">
+                                                    <img alt="team" src="assets/img/p3-1-336x284.jpg"
+                                                        class="img-fluid w-100">
+                                                    <div
+                                                        class="d-flex align-items-center gap-2 position-absolute bottom-24 ms-4 mt-4">
+                                                        <a
+                                                            class="d-flex align-items-center justify-content-center text-white p-3 rounded-3 third-bg">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" fill="currentColor"
+                                                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                            </svg>
+                                                        </a>
+                                                        <a
+                                                            class="d-flex align-items-center justify-content-center text-white p-3 rounded-3 third-bg">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" fill="currentColor"
+                                                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="px-4 py-5 bg-white">
+                                                    <a class="mb-1 h5 fw-bold text-black">Emily Rees</a>
+                                                    <p class="text-secondary">مشاور مشتری</p>
+                                                    <hr class="third-bg">
+                                                    <a class="fw-bold main-text">emily@vehica.com </a>
+                                                    <a class="fw-bold text-secondary d-table">(123) 345-6789 </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide transition bg-white rounded-3 overflow-hidden">
+                                            <a class="d-block">
+                                                <div class="position-relative">
+                                                    <img alt="team" src="assets/img/p2-1-336x284.jpg"
+                                                        class="img-fluid w-100">
+                                                    <div
+                                                        class="d-flex align-items-center gap-2 position-absolute bottom-24 ms-4 mt-4">
+                                                        <a
+                                                            class="d-flex align-items-center justify-content-center text-white p-3 rounded-3 third-bg">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" fill="currentColor"
+                                                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                            </svg>
+                                                        </a>
+                                                        <a
+                                                            class="d-flex align-items-center justify-content-center text-white p-3 rounded-3 third-bg">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" fill="currentColor"
+                                                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="px-4 py-5 bg-white">
+                                                    <a class="mb-1 h5 fw-bold text-black">Emily Rees</a>
+                                                    <p class="text-secondary">مشاور مشتری</p>
+                                                    <hr class="third-bg">
+                                                    <a class="fw-bold main-text">emily@vehica.com </a>
+                                                    <a class="fw-bold text-secondary d-table">(123) 345-6789 </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide transition bg-white rounded-3 overflow-hidden">
+                                            <a class="d-block">
+                                                <div class="position-relative">
+                                                    <img alt="team" src="assets/img/p1-1-336x284.jpg"
+                                                        class="img-fluid w-100">
+                                                    <div
+                                                        class="d-flex align-items-center gap-2 position-absolute bottom-24 ms-4 mt-4">
+                                                        <a
+                                                            class="d-flex align-items-center justify-content-center text-white p-3 rounded-3 third-bg">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" fill="currentColor"
+                                                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                            </svg>
+                                                        </a>
+                                                        <a
+                                                            class="d-flex align-items-center justify-content-center text-white p-3 rounded-3 third-bg">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                height="22" fill="currentColor"
+                                                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="px-4 py-5 bg-white">
+                                                    <a class="mb-1 h5 fw-bold text-black">Emily Rees</a>
+                                                    <p class="text-secondary">مشاور مشتری</p>
+                                                    <hr class="third-bg">
+                                                    <a class="fw-bold main-text">emily@vehica.com </a>
+                                                    <a class="fw-bold text-secondary d-table">(123) 345-6789 </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- faq -->
+                <div class="container mt-5">
+                    <div class="faq-bg rounded-22 p-5 position-relative">
+                        <h1 class="font-bold text-center text-white position-relative z-10">سوالات متداول</h1>
+                        <div class="row g-4 mt-5 position-relative z-10">
+                            <div class="col-lg-6">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                What is Auto Detailing?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the first item's accordion body.</strong> It is shown by
+                                                default, until the collapse plugin adds the appropriate classes that we use
+                                                to style each element. These classes control the overall appearance, as well
+                                                as the showing and hiding via CSS transitions. You can modify any of this
+                                                with custom CSS or overriding our default variables. It's also worth noting
+                                                that just about any HTML can go within the <code>.accordion-body</code>,
+                                                though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Accordion Item #2
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the second item's accordion body.</strong> It is hidden by
+                                                default, until the collapse plugin adds the appropriate classes that we use
+                                                to style each element. These classes control the overall appearance, as well
+                                                as the showing and hiding via CSS transitions. You can modify any of this
+                                                with custom CSS or overriding our default variables. It's also worth noting
+                                                that just about any HTML can go within the <code>.accordion-body</code>,
+                                                though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Accordion Item #3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the third item's accordion body.</strong> It is hidden by
+                                                default, until the collapse plugin adds the appropriate classes that we use
+                                                to style each element. These classes control the overall appearance, as well
+                                                as the showing and hiding via CSS transitions. You can modify any of this
+                                                with custom CSS or overriding our default variables. It's also worth noting
+                                                that just about any HTML can go within the <code>.accordion-body</code>,
+                                                though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseFour" aria-expanded="true"
+                                                aria-controls="collapseFour">
+                                                What is Auto Detailing?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the first item's accordion body.</strong> It is shown by
+                                                default, until the collapse plugin adds the appropriate classes that we use
+                                                to style each element. These classes control the overall appearance, as well
+                                                as the showing and hiding via CSS transitions. You can modify any of this
+                                                with custom CSS or overriding our default variables. It's also worth noting
+                                                that just about any HTML can go within the <code>.accordion-body</code>,
+                                                though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                aria-expanded="false" aria-controls="collapseFive">
+                                                Accordion Item #2
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the second item's accordion body.</strong> It is hidden by
+                                                default, until the collapse plugin adds the appropriate classes that we use
+                                                to style each element. These classes control the overall appearance, as well
+                                                as the showing and hiding via CSS transitions. You can modify any of this
+                                                with custom CSS or overriding our default variables. It's also worth noting
+                                                that just about any HTML can go within the <code>.accordion-body</code>,
+                                                though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                                aria-expanded="false" aria-controls="collapseSix">
+                                                Accordion Item #3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the third item's accordion body.</strong> It is hidden by
+                                                default, until the collapse plugin adds the appropriate classes that we use
+                                                to style each element. These classes control the overall appearance, as well
+                                                as the showing and hiding via CSS transitions. You can modify any of this
+                                                with custom CSS or overriding our default variables. It's also worth noting
+                                                that just about any HTML can go within the <code>.accordion-body</code>,
+                                                though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a
+                            class="btn position-relative special-hover mx-auto d-block w-120 mt-5 main-bg text-white fw-bold">
+                            بیشتر بدانید
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container pb-5">
+            <div class="row g-4">
+                <div class="col-lg-2">
+                    <img alt="footer-logo" src="assets/img/logo.png" class="img-fluid my-4 my-lg-0 d-block mx-auto">
+                </div>
+                <div class="col-lg-5">
+                    <div class="d-flex justify-content-around">
+                        <ul class="list-unstyled p-0 lh-lg">
+                            <li class="mb-2 position-relative"><a class="text-white transition">لیست ها</a></li>
+                            <li class="mb-2 position-relative"><a class="text-white transition">سوالات متداول</a></li>
+                            <li class="mb-2 position-relative"><a class="text-white transition">درباره ما</a></li>
+                        </ul>
+                        <ul class="list-unstyled p-0 lh-lg">
+                            <li class="mb-2 position-relative"><a class="text-white transition">بلاگ</a></li>
+                            <li class="mb-2 position-relative"><a class="text-white transition">تیم ما</a></li>
+                            <li class="mb-2 position-relative"><a class="text-white transition">تماس با ما</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <p class="text-white">
+                        برنده جایزه، نمایندگی خانوادگی وسایل نقلیه جدید و متعلق به قبل با چندین مکان
+                        در سراسر شهر کمترین قیمت و بهترین خدمات مشتری تضمین شده است.
+                    </p>
+                </div>
+                <div class="col-lg-3 text-lg-start">
+                    <a class="h3 fw-bold d-block main-text">(123) 456-78901</a>
+                    <a class="text-white fw-bold d-block mt-3">support@vehica.com </a>
+                    <a class="text-white fw-bold d-block mt-3">خیابان دوازدهم غربی
+                        نیویورک، نیویورک، ایالات متحده آمریکا</a>
+                </div>
+            </div>
+        </div>
+        <div class="border-top border-secondary fw-bold py-4 text-muted">
+            <div class="container">
+                <p class="mb-0"> حق نشر © 2023. ایجاد شده توسط <a class="main-text"> AdibGroup </a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
